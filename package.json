@@ -1,25 +1,31 @@
 {
-    "author": "Karl Düüna",
-    "name": "zuora-rest",
-    "description": "Zuora API wrapper for Node",
-    "version": "0.1.9",
-    "keywords": [
-        "zuora",
-        "rest"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git@github.com/joyent/node-zuora-rest.git"
-    },
-    "main": "index.js",
-    "dependencies": {
-        "restify":"*",
-        "validator": "9.4.1"
-    },
-    "devDependencies": {},
-    "optionalDependencies": {},
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "private": false
+  "author": "Karl Düüna",
+  "name": "zuora-rest",
+  "description": "Zuora API wrapper for Node",
+  "version": "0.1.9",
+  "keywords": [
+    "zuora",
+    "rest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/joyent/node-zuora-rest.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "restify": "*",
+    "validator": "9.4.1",
+    "snyk": "^1.316.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": false,
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
